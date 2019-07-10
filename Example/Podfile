@@ -1,0 +1,6 @@
+use_frameworks!
+target 'CodableProperty_Tests' do
+  pod 'CodableProperty', :path => '../'
+  
+  
+end

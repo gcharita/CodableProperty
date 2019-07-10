@@ -1,0 +1,6 @@
+framework module Pods_CodableProperty_Tests {
+  umbrella header "Pods-CodableProperty_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

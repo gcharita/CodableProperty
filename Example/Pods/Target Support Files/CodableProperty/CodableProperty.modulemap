@@ -1,0 +1,6 @@
+framework module CodableProperty {
+  umbrella header "CodableProperty-umbrella.h"
+
+  export *
+  module * { export * }
+}
