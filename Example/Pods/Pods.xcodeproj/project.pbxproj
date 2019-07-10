@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01D45F040EDB628CB840C7F665391D08 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993C0FB5BD9F84D3F24C330D8E4E78E9 /* ReplaceMe.swift */; };
 		3043AFF88232E6E3AE242C45D7044D18 /* Pods-CodableProperty_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 426543C3DBD0CA0A6D37DA78542F4EC7 /* Pods-CodableProperty_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3801DB5AB4523EE27AA2F32EC64A0F3E /* CodableProperty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81152C73732C25493D0630E73D40562A /* CodableProperty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		431878CFD603E4B7DA014EB1BF0655D4 /* CodableProperty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D29D52E39B8749DE537CE4BEF429DDD7 /* CodableProperty-dummy.m */; };
-		56044D3AD2073D78E1259032DEDD2BF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		59D587B54EAAB3F9DC2E1179EBA9D244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6A60935751799DB672A9CAFF565A81D8 /* CodableProperty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EC03B38EB6F5AF226291E0673D1FB /* CodableProperty-dummy.m */; };
+		7260AEF0E1CBC6B10C5BD796F257C3A1 /* CodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE886DE106B693EAAE46056985F987C5 /* CodableTransformer.swift */; };
 		7C5DC0C992D0FE6C2C8DCDA0B065F09E /* Pods-CodableProperty_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C7CBC3112DE21D495D3A03BD1F7127 /* Pods-CodableProperty_Tests-dummy.m */; };
+		80727AB71565DD88F05706262BE420E3 /* CodableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537E9A30551A0815B01D002CB5D523D /* CodableProperty.swift */; };
+		83FE0E155379A0F4A922476991D09773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C656DC23AE56F21B869D70AF45ACA956 /* CodableProperty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233473F5F18A239BC85713D6CBC114E3 /* CodableProperty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,34 +31,35 @@
 		034F4A0ED8FD4E71BD934C44FDF7627F /* Pods-CodableProperty_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableProperty_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		071AA4D3475F1597BBF407AC123F598D /* Pods-CodableProperty_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableProperty_Tests-Info.plist"; sourceTree = "<group>"; };
 		1E4D5F9AB75982F7E7BFACA84E44FA9D /* Pods-CodableProperty_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableProperty_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		233473F5F18A239BC85713D6CBC114E3 /* CodableProperty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableProperty-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		353D0F3EFF82C431D3080A9CB2E1D5D5 /* CodableProperty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableProperty.modulemap; sourceTree = "<group>"; };
+		3918CD084B41B4B8473F296FC8DED5E4 /* CodableProperty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableProperty.modulemap; sourceTree = "<group>"; };
 		426543C3DBD0CA0A6D37DA78542F4EC7 /* Pods-CodableProperty_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableProperty_Tests-umbrella.h"; sourceTree = "<group>"; };
-		472BB4B1CA64700D7CC0DD045D5D2594 /* CodableProperty.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableProperty.xcconfig; sourceTree = "<group>"; };
-		6F95C0371F8128AB2DE738DCC45EBCD4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4ABFE21B2B9616AE4C1671078AB4B581 /* CodableProperty-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableProperty-Info.plist"; sourceTree = "<group>"; };
+		4B305DF24F17C789A20B6195F8E67621 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5537E9A30551A0815B01D002CB5D523D /* CodableProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableProperty.swift; path = CodableProperty/Classes/CodableProperty.swift; sourceTree = "<group>"; };
 		7052C13548BC4256ACF466C84B2C5D57 /* Pods_CodableProperty_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CodableProperty_Tests.framework; path = "Pods-CodableProperty_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		735E7CF1C7EEBFF4F9A87ED0623F584D /* Pods-CodableProperty_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodableProperty_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		81152C73732C25493D0630E73D40562A /* CodableProperty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableProperty-umbrella.h"; sourceTree = "<group>"; };
-		821003B0ED2E44BCAF510C4588D7996D /* CodableProperty-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableProperty-Info.plist"; sourceTree = "<group>"; };
+		785C17572C850CBD23DFC35EB230346F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableProperty.xcconfig; sourceTree = "<group>"; };
 		92C7CBC3112DE21D495D3A03BD1F7127 /* Pods-CodableProperty_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableProperty_Tests-dummy.m"; sourceTree = "<group>"; };
-		993C0FB5BD9F84D3F24C330D8E4E78E9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = CodableProperty/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A642F9B8FAFD308F288F1B53F9F557F8 /* CodableProperty.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CodableProperty.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE4A2035089EC25A84B118C8CE6A3BD7 /* Pods-CodableProperty_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableProperty_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B9CF2377933A7752C34CB367B9EB0EBE /* CodableProperty.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CodableProperty.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B37EC03B38EB6F5AF226291E0673D1FB /* CodableProperty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableProperty-dummy.m"; sourceTree = "<group>"; };
 		BCD36C5E0FCAF96443BA69A978C07585 /* CodableProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableProperty.framework; path = CodableProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE886DE106B693EAAE46056985F987C5 /* CodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableTransformer.swift; path = CodableProperty/Classes/CodableTransformer.swift; sourceTree = "<group>"; };
 		C6AD6B548978F4E81B15B74AC2666AEA /* Pods-CodableProperty_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableProperty_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D29D52E39B8749DE537CE4BEF429DDD7 /* CodableProperty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableProperty-dummy.m"; sourceTree = "<group>"; };
 		EB59B7FC9392F47FCBEEA0F91279065F /* Pods-CodableProperty_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableProperty_Tests.modulemap"; sourceTree = "<group>"; };
-		EDFEA235EBAE280415645229EECF3076 /* CodableProperty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableProperty-prefix.pch"; sourceTree = "<group>"; };
-		F9E15F2E427B65D7978345944AF84338 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F0E07447BFF3698C1E971C3515B649C7 /* CodableProperty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableProperty-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3289A28EC31FF2B90232B3F852C75A3C /* Frameworks */ = {
+		846E960B8039031F7916A4CB74AA604A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56044D3AD2073D78E1259032DEDD2BF6 /* Foundation.framework in Frameworks */,
+				83FE0E155379A0F4A922476991D09773 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,39 +74,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		067F451D35A80FA67AC79D258AABD31C /* Pod */ = {
+		1FB30460C3561480776E7DB17188AADD /* CodableProperty */ = {
 			isa = PBXGroup;
 			children = (
-				B9CF2377933A7752C34CB367B9EB0EBE /* CodableProperty.podspec */,
-				F9E15F2E427B65D7978345944AF84338 /* LICENSE */,
-				6F95C0371F8128AB2DE738DCC45EBCD4 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		14237B624689F799026803F980D650B6 /* CodableProperty */ = {
-			isa = PBXGroup;
-			children = (
-				993C0FB5BD9F84D3F24C330D8E4E78E9 /* ReplaceMe.swift */,
-				067F451D35A80FA67AC79D258AABD31C /* Pod */,
-				17E2FF2584FB4902DF9C15D94EFD1352 /* Support Files */,
+				5537E9A30551A0815B01D002CB5D523D /* CodableProperty.swift */,
+				BE886DE106B693EAAE46056985F987C5 /* CodableTransformer.swift */,
+				51B354411EB6DE7291BDF03039B33C43 /* Pod */,
+				40D3E0E7117D46F73DF2901947DD1220 /* Support Files */,
 			);
 			name = CodableProperty;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		17E2FF2584FB4902DF9C15D94EFD1352 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				353D0F3EFF82C431D3080A9CB2E1D5D5 /* CodableProperty.modulemap */,
-				472BB4B1CA64700D7CC0DD045D5D2594 /* CodableProperty.xcconfig */,
-				D29D52E39B8749DE537CE4BEF429DDD7 /* CodableProperty-dummy.m */,
-				821003B0ED2E44BCAF510C4588D7996D /* CodableProperty-Info.plist */,
-				EDFEA235EBAE280415645229EECF3076 /* CodableProperty-prefix.pch */,
-				81152C73732C25493D0630E73D40562A /* CodableProperty-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CodableProperty";
 			sourceTree = "<group>";
 		};
 		2BB0A9F1F144E8577F91CE2CAA54F929 /* Targets Support Files */ = {
@@ -115,12 +94,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7F6205065F9D8BDB9EC1B324A6CB4754 /* Development Pods */ = {
+		40D3E0E7117D46F73DF2901947DD1220 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				14237B624689F799026803F980D650B6 /* CodableProperty */,
+				3918CD084B41B4B8473F296FC8DED5E4 /* CodableProperty.modulemap */,
+				8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */,
+				B37EC03B38EB6F5AF226291E0673D1FB /* CodableProperty-dummy.m */,
+				4ABFE21B2B9616AE4C1671078AB4B581 /* CodableProperty-Info.plist */,
+				F0E07447BFF3698C1E971C3515B649C7 /* CodableProperty-prefix.pch */,
+				233473F5F18A239BC85713D6CBC114E3 /* CodableProperty-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CodableProperty";
+			sourceTree = "<group>";
+		};
+		50CF419BDF4F2116344A75B2A24E4308 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FB30460C3561480776E7DB17188AADD /* CodableProperty */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		51B354411EB6DE7291BDF03039B33C43 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A642F9B8FAFD308F288F1B53F9F557F8 /* CodableProperty.podspec */,
+				4B305DF24F17C789A20B6195F8E67621 /* LICENSE */,
+				785C17572C850CBD23DFC35EB230346F /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		A77485579E7C663EF85960681B5E02B0 /* Products */ = {
@@ -161,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				7F6205065F9D8BDB9EC1B324A6CB4754 /* Development Pods */,
+				50CF419BDF4F2116344A75B2A24E4308 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				A77485579E7C663EF85960681B5E02B0 /* Products */,
 				2BB0A9F1F144E8577F91CE2CAA54F929 /* Targets Support Files */,
@@ -179,11 +182,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		774AE87E6879A31F47BC70A608F1FAA4 /* Headers */ = {
+		943900C43F5C1CFC313FF3F5A67B88EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3801DB5AB4523EE27AA2F32EC64A0F3E /* CodableProperty-umbrella.h in Headers */,
+				C656DC23AE56F21B869D70AF45ACA956 /* CodableProperty-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,12 +203,12 @@
 /* Begin PBXNativeTarget section */
 		7A8C1AA976901F6254DE0BB8D3504A9F /* CodableProperty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 037ED76100B531924E4E7C80C20F2F5A /* Build configuration list for PBXNativeTarget "CodableProperty" */;
+			buildConfigurationList = 9BE366DD7457C195C09BB64F553B43BA /* Build configuration list for PBXNativeTarget "CodableProperty" */;
 			buildPhases = (
-				774AE87E6879A31F47BC70A608F1FAA4 /* Headers */,
-				63E4AF25D4461E983D37BE189876CF5C /* Sources */,
-				3289A28EC31FF2B90232B3F852C75A3C /* Frameworks */,
-				2054D2A31DFE3C94E2E74B0715FFB500 /* Resources */,
+				943900C43F5C1CFC313FF3F5A67B88EE /* Headers */,
+				2E778DEB42C68BCF5CEA27CD22CD3FC2 /* Sources */,
+				846E960B8039031F7916A4CB74AA604A /* Frameworks */,
+				D9B2E5EE53597A58FB7D1A291BCF45B3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -263,14 +266,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2054D2A31DFE3C94E2E74B0715FFB500 /* Resources */ = {
+		67C8042FEC94BB071937E74A5C254544 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67C8042FEC94BB071937E74A5C254544 /* Resources */ = {
+		D9B2E5EE53597A58FB7D1A291BCF45B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,12 +283,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		63E4AF25D4461E983D37BE189876CF5C /* Sources */ = {
+		2E778DEB42C68BCF5CEA27CD22CD3FC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431878CFD603E4B7DA014EB1BF0655D4 /* CodableProperty-dummy.m in Sources */,
-				01D45F040EDB628CB840C7F665391D08 /* ReplaceMe.swift in Sources */,
+				6A60935751799DB672A9CAFF565A81D8 /* CodableProperty-dummy.m in Sources */,
+				80727AB71565DD88F05706262BE420E3 /* CodableProperty.swift in Sources */,
+				7260AEF0E1CBC6B10C5BD796F257C3A1 /* CodableTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,41 +313,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01F6E663A000E4CCABE0D7C4BFBAED81 /* Release */ = {
+		17B31EB8CC69FB15DD4ADAB28C5BC036 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 472BB4B1CA64700D7CC0DD045D5D2594 /* CodableProperty.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
-				PRODUCT_MODULE_NAME = CodableProperty;
-				PRODUCT_NAME = CodableProperty;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5F75F6141400263E429AF56FD6DC5FEA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E4D5F9AB75982F7E7BFACA84E44FA9D /* Pods-CodableProperty_Tests.release.xcconfig */;
+			baseConfigurationReference = AE4A2035089EC25A84B118C8CE6A3BD7 /* Pods-CodableProperty_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -357,7 +329,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-CodableProperty_Tests/Pods-CodableProperty_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CodableProperty_Tests/Pods-CodableProperty_Tests.modulemap";
@@ -369,13 +341,43 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		33443342C67FBD00DBC5AA0F5784AF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
+				PRODUCT_MODULE_NAME = CodableProperty;
+				PRODUCT_NAME = CodableProperty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -423,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,40 +437,7 @@
 			};
 			name = Release;
 		};
-		B06516E06FE0EB49A3D1B83309E674AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE4A2035089EC25A84B118C8CE6A3BD7 /* Pods-CodableProperty_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CodableProperty_Tests/Pods-CodableProperty_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CodableProperty_Tests/Pods-CodableProperty_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -519,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -532,9 +501,9 @@
 			};
 			name = Debug;
 		};
-		CE63DB44F8D355B78623583EA84E0C36 /* Debug */ = {
+		C52776D32ED6F5C42B55C65A4E24F2A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 472BB4B1CA64700D7CC0DD045D5D2594 /* CodableProperty.xcconfig */;
+			baseConfigurationReference = 8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -548,7 +517,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
 				PRODUCT_MODULE_NAME = CodableProperty;
@@ -558,28 +527,63 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		F93282C41A0D7B4941CB5B07C5369EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E4D5F9AB75982F7E7BFACA84E44FA9D /* Pods-CodableProperty_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableProperty_Tests/Pods-CodableProperty_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableProperty_Tests/Pods-CodableProperty_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		037ED76100B531924E4E7C80C20F2F5A /* Build configuration list for PBXNativeTarget "CodableProperty" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE63DB44F8D355B78623583EA84E0C36 /* Debug */,
-				01F6E663A000E4CCABE0D7C4BFBAED81 /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+		9BE366DD7457C195C09BB64F553B43BA /* Build configuration list for PBXNativeTarget "CodableProperty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				33443342C67FBD00DBC5AA0F5784AF86 /* Debug */,
+				C52776D32ED6F5C42B55C65A4E24F2A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -587,8 +591,8 @@
 		E573D0C8C547E3D57273EA26B5116E6E /* Build configuration list for PBXNativeTarget "Pods-CodableProperty_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B06516E06FE0EB49A3D1B83309E674AC /* Debug */,
-				5F75F6141400263E429AF56FD6DC5FEA /* Release */,
+				17B31EB8CC69FB15DD4ADAB28C5BC036 /* Debug */,
+				F93282C41A0D7B4941CB5B07C5369EF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
