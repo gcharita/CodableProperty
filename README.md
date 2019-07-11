@@ -7,6 +7,14 @@
 
 CodableProperty is a framework written in Swift that works along with the build in `Codable` protocol. Uses the new `propertyWrapper` feature of Swift 5.1 to make type transformation easier.
 
+- [Example](#example)
+- [Requirements](#requirements)
+- [How to use](#how-to-use)
+- [Communication](#communication)
+- [Installation](#installation)
+- [Special thanks](#special-thanks)
+- [License](#license)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
