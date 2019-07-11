@@ -43,8 +43,8 @@ public protocol EncodableTransformer {
      encoder's format.
      
      - Parameters:
-     - value: The value to be encoded
-     - encoder: The encoder to write data to.
+         - value: The value to be encoded
+         - encoder: The encoder to write data to.
      
      - Throws: an error if any values are invalid for the given encoder's format.
      */
