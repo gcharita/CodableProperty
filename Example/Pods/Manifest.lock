@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CodableProperty: d5ea4eff1e9cb9c8963acf468a4a90187db208dc
+  CodableProperty: 0dd7085fc5d8722d87ac1c6f9f016c14cc13055c
 
 PODFILE CHECKSUM: 01144ccda2e0640af14029d1baafae098b17dabd
 

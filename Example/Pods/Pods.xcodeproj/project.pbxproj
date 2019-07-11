@@ -407,38 +407,6 @@
 			};
 			name = Release;
 		};
-		760C162261C453C3B9271A03DCE5137A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
-				PRODUCT_MODULE_NAME = CodableProperty;
-				PRODUCT_NAME = CodableProperty;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,7 +471,7 @@
 			};
 			name = Debug;
 		};
-		99E8C3B6885A0DEEB7D0B35A8A73B40D /* Debug */ = {
+		91FB37E2E595D003711D88E40A988763 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */;
 			buildSettings = {
@@ -527,12 +495,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		B1D9DE95F62EF8EBC1B5D9965A107330 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -567,6 +536,37 @@
 			};
 			name = Debug;
 		};
+		FC070AB1632499A397CCAB9EA5537D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
+				PRODUCT_MODULE_NAME = CodableProperty;
+				PRODUCT_NAME = CodableProperty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,8 +582,8 @@
 		9BE366DD7457C195C09BB64F553B43BA /* Build configuration list for PBXNativeTarget "CodableProperty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99E8C3B6885A0DEEB7D0B35A8A73B40D /* Debug */,
-				760C162261C453C3B9271A03DCE5137A /* Release */,
+				FC070AB1632499A397CCAB9EA5537D08 /* Debug */,
+				91FB37E2E595D003711D88E40A988763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
