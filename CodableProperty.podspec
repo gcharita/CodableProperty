@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CodableProperty'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Easy transforming of Codable types written in Swift'
 
   s.description      = <<-DESC
