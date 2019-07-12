@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/CodableProperty.svg?style=flat)](https://cocoapods.org/pods/CodableProperty)
 [![License](https://img.shields.io/cocoapods/l/CodableProperty.svg?style=flat)](https://cocoapods.org/pods/CodableProperty)
 [![Platform](https://img.shields.io/cocoapods/p/CodableProperty.svg?style=flat)](https://cocoapods.org/pods/CodableProperty)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 CodableProperty is a framework written in Swift that works along with the build in `Codable` protocol. Uses the new `propertyWrapper` feature of Swift 5.1 to make type transformation easier.
 
@@ -161,6 +162,16 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'CodableProperty'
 ```
+
+### Swift Package Manager
+
+To add CodableProperty to a [Swift Package Manager](https://swift.org/package-manager/) based project, add the following:
+
+```swift
+.package(url: "https://github.com/gcharita/CodableProperty.git", from: "0.2.0")
+```
+
+to the `dependencies` value of your `Package.swift`.
 
 ## Special thanks
 
