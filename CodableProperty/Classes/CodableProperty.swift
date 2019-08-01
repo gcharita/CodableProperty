@@ -24,6 +24,10 @@ import Foundation
 @propertyWrapper public struct EncodableProperty<Transformer: EncodableTransformer>: Encodable {
     public var wrappedValue: Transformer.Value
     
+    public init(wrappedValue: Transformer.Value) {
+        self.wrappedValue = wrappedValue
+    }
+    
     public func encode(to encoder: Encoder) throws {
         try Transformer.encode(value: wrappedValue, to: encoder)
     }
