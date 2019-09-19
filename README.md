@@ -64,10 +64,10 @@ struct ExchangeRate {
 You can transform the JSON type to your model type by implementing `CodableTransformer` protocol:
 
 ```swift
-class RatesTransformer: CodableTransformer {
+struct RatesTransformer: CodableTransformer {
     typealias Value = [ExchangeRate]
 
-    static func value(from decoder: Decoder) throws -> Value {
+    func value(from decoder: Decoder) throws -> Value {
         let container = try decoder.singleValueContainer()
         let dictionary = try container.decode([String: Double].self)
 
@@ -76,9 +76,9 @@ class RatesTransformer: CodableTransformer {
         }
     }
 
-    static func encode(value: Value, to encoder: Encoder) throws {
+    func encode(value: Value, to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
-        let dictionary = value.reduce(into: [String: Double]()) { (result: inout [String: Double], exchangeRate: ExchangeRate) in
+        let dictionary = value.reduce(into: [String: Double]()) { result, exchangeRate in
             result[exchangeRate.currency] = exchangeRate.rate
         }
         try container.encode(dictionary)
@@ -103,10 +103,10 @@ struct ExchangeRate {
 If you model implements `Decodable` protocol instead of `Codable` you can specialize the type transformation only in decoding process by implementing `DecodableTransformer` protocol:
 
 ```swift
-class RatesTransformer: DecodableTransformer {
+struct RatesTransformer: DecodableTransformer {
     typealias Value = [ExchangeRate]
 
-    static func value(from decoder: Decoder) throws -> Value {
+    func value(from decoder: Decoder) throws -> Value {
         let container = try decoder.singleValueContainer()
         let dictionary = try container.decode([String: Double].self)
 
@@ -129,12 +129,12 @@ struct CurrencyConversion: Decodable {
 The same applies also to `Encodable` models:
 
 ```swift
-class RatesTransformer: EncodableTransformer {
+struct RatesTransformer: EncodableTransformer {
     typealias Value = [ExchangeRate]
 
-    static func encode(value: Value, to encoder: Encoder) throws {
+    func encode(value: Value, to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
-        let dictionary = value.reduce(into: [String: Double]()) { (result: inout [String: Double], exchangeRate: ExchangeRate) in
+        let dictionary = value.reduce(into: [String: Double]()) { result, exchangeRate in
             result[exchangeRate.currency] = exchangeRate.rate
         }
         try container.encode(dictionary)
@@ -168,7 +168,7 @@ pod 'CodableProperty'
 To add CodableProperty to a [Swift Package Manager](https://swift.org/package-manager/) based project, add the following:
 
 ```swift
-.package(url: "https://github.com/gcharita/CodableProperty.git", from: "0.2.0")
+.package(url: "https://github.com/gcharita/CodableProperty.git", from: "1.0.0")
 ```
 
 to the `dependencies` value of your `Package.swift`.
