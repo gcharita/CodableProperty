@@ -1,6 +1,6 @@
 {
   "name": "CodableProperty",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "summary": "Easy transforming of Codable types written in Swift",
   "description": "CodableProperty is a framework written in Swift that works along with the build in `Codable` protocol.\nUses the new `propertyWrapper` feature of Swift 5.1 to make type transformation easier.",
   "homepage": "https://github.com/gcharita/CodableProperty",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gcharita/CodableProperty.git",
-    "tag": "0.2.1"
+    "tag": "1.0.0"
   },
   "platforms": {
     "watchos": "2.0",
