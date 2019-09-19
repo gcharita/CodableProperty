@@ -1,5 +1,5 @@
 PODS:
-  - CodableProperty (0.2.1)
+  - CodableProperty (1.0.0)
 
 DEPENDENCIES:
   - CodableProperty (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CodableProperty: c621c3d84bec9553bba6a1f6c52d0855d11e49bc
+  CodableProperty: a9cfeecd21d75d32b0b7c13293c9f280f26d452b
 
 PODFILE CHECKSUM: 01144ccda2e0640af14029d1baafae098b17dabd
 

@@ -13,9 +13,22 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testTransformer() {
+        let jsonString = """
+        {
+            "currency": "PLN",
+            "rates": {
+                "USD": 3.76,
+                "EUR": 4.24,
+                "SEK": 0.41
+            }
+        }
+        """
+        let object = try? JSONDecoder().decode(CurrencyConversion.self, from: Data(jsonString.utf8))
+        XCTAssertEqual(object?.currency, "PLN")
+        XCTAssertEqual(object?.rates.first(where: { $0.currency == "USD" })?.rate, 3.76)
+        XCTAssertEqual(object?.rates.first(where: { $0.currency == "EUR" })?.rate, 4.24)
+        XCTAssertEqual(object?.rates.first(where: { $0.currency == "SEK" })?.rate, 0.41)
     }
     
     func testPerformanceExample() {
@@ -25,4 +38,35 @@ class Tests: XCTestCase {
         }
     }
     
+}
+
+struct CurrencyConversion: Codable {
+    var currency: String
+    @CodableProperty<RatesTransformer> var rates: [ExchangeRate]
+}
+
+struct ExchangeRate {
+    let currency: String
+    let rate: Double
+}
+
+struct RatesTransformer: CodableTransformer {
+    typealias Value = [ExchangeRate]
+
+    func value(from decoder: Decoder) throws -> Value {
+        let container = try decoder.singleValueContainer()
+        let dictionary = try container.decode([String: Double].self)
+
+        return dictionary.map { key, value in
+            ExchangeRate(currency: key, rate: value)
+        }
+    }
+
+    func encode(value: Value, to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        let dictionary = value.reduce(into: [String: Double]()) { (result: inout [String: Double], exchangeRate: ExchangeRate) in
+            result[exchangeRate.currency] = exchangeRate.rate
+        }
+        try container.encode(dictionary)
+    }
 }

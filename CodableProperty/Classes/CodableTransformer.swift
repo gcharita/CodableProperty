@@ -14,6 +14,8 @@ public typealias CodableTransformer = EncodableTransformer & DecodableTransforme
 public protocol DecodableTransformer {
     associatedtype Value
     
+    init()
+    
     /**
      Returns a new instance of `Value` type by decoding from the given decoder.
      
@@ -26,12 +28,14 @@ public protocol DecodableTransformer {
      
      - Returns: A new instance of `Value` type.
      */
-    static func value(from decoder: Decoder) throws -> Value
+    func value(from decoder: Decoder) throws -> Value
 }
 
 /// A type that transforms the outcome of the encoding process.
 public protocol EncodableTransformer {
     associatedtype Value
+    
+    init()
     
     /**
      Encodes the passed value into the given encoder.
@@ -48,5 +52,5 @@ public protocol EncodableTransformer {
      
      - Throws: an error if any values are invalid for the given encoder's format.
      */
-    static func encode(value: Value, to encoder: Encoder) throws
+    func encode(value: Value, to encoder: Encoder) throws
 }
