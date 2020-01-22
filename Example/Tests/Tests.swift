@@ -24,11 +24,38 @@ class Tests: XCTestCase {
             }
         }
         """
-        let object = try? JSONDecoder().decode(CurrencyConversion.self, from: Data(jsonString.utf8))
-        XCTAssertEqual(object?.currency, "PLN")
-        XCTAssertEqual(object?.rates.first(where: { $0.currency == "USD" })?.rate, 3.76)
-        XCTAssertEqual(object?.rates.first(where: { $0.currency == "EUR" })?.rate, 4.24)
-        XCTAssertEqual(object?.rates.first(where: { $0.currency == "SEK" })?.rate, 0.41)
+        do {
+            let jsonDecoder = JSONDecoder()
+            let jsonEncoder = JSONEncoder()
+            
+            var object = try jsonDecoder.decode(CurrencyConversion.self, from: Data(jsonString.utf8))
+            XCTAssertEqual(object.currency, "PLN")
+            XCTAssertEqual(object.rates.first(where: { $0.currency == "USD" })?.rate, 3.76)
+            XCTAssertEqual(object.rates.first(where: { $0.currency == "EUR" })?.rate, 4.24)
+            XCTAssertEqual(object.rates.first(where: { $0.currency == "SEK" })?.rate, 0.41)
+            
+            var data = try jsonEncoder.encode(object)
+            object = try jsonDecoder.decode(CurrencyConversion.self, from: data)
+            XCTAssertEqual(object.currency, "PLN")
+            XCTAssertEqual(object.rates.first(where: { $0.currency == "USD" })?.rate, 3.76)
+            XCTAssertEqual(object.rates.first(where: { $0.currency == "EUR" })?.rate, 4.24)
+            XCTAssertEqual(object.rates.first(where: { $0.currency == "SEK" })?.rate, 0.41)
+            
+            var optionalObject = try jsonDecoder.decode(OptionalRatesCurrencyConversion.self, from: Data(jsonString.utf8))
+            XCTAssertEqual(optionalObject.currency, "PLN")
+            XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "USD" })?.rate, 3.76)
+            XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "EUR" })?.rate, 4.24)
+            XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "SEK" })?.rate, 0.41)
+            
+            data = try jsonEncoder.encode(object)
+            optionalObject = try jsonDecoder.decode(OptionalRatesCurrencyConversion.self, from: data)
+            XCTAssertEqual(optionalObject.currency, "PLN")
+            XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "USD" })?.rate, 3.76)
+            XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "EUR" })?.rate, 4.24)
+            XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "SEK" })?.rate, 0.41)
+        } catch {
+            XCTAssertTrue(false)
+        }
     }
     
     func testPerformanceExample() {
@@ -42,7 +69,16 @@ class Tests: XCTestCase {
 
 struct CurrencyConversion: Codable {
     var currency: String
-    @CodableProperty<RatesTransformer> var rates: [ExchangeRate]
+    
+    @CodableProperty<NonOptionalCodableTransformer<RatesTransformer>>
+    var rates: [ExchangeRate]
+}
+
+struct OptionalRatesCurrencyConversion: Codable {
+    var currency: String
+    
+    @CodableProperty<OptionalCodableTransformer<RatesTransformer>>
+    var rates: [ExchangeRate]?
 }
 
 struct ExchangeRate {
@@ -50,10 +86,10 @@ struct ExchangeRate {
     let rate: Double
 }
 
-struct RatesTransformer: CodableTransformer {
+struct RatesTransformer: BaseCodableTransformer {
     typealias Value = [ExchangeRate]
 
-    func value(from decoder: Decoder) throws -> Value {
+    func value(from decoder: Decoder) throws -> Value? {
         let container = try decoder.singleValueContainer()
         let dictionary = try container.decode([String: Double].self)
 
@@ -62,9 +98,9 @@ struct RatesTransformer: CodableTransformer {
         }
     }
 
-    func encode(value: Value, to encoder: Encoder) throws {
+    func encode(value: Value?, to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
-        let dictionary = value.reduce(into: [String: Double]()) { (result: inout [String: Double], exchangeRate: ExchangeRate) in
+        let dictionary = value?.reduce(into: [String: Double]()) { (result: inout [String: Double], exchangeRate: ExchangeRate) in
             result[exchangeRate.currency] = exchangeRate.rate
         }
         try container.encode(dictionary)
