@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2451F25351BF63395C7947142C718774 /* CodableProperty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6665A56436807396FDC4215ABC675E03 /* CodableProperty-dummy.m */; };
 		3043AFF88232E6E3AE242C45D7044D18 /* Pods-CodableProperty_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 426543C3DBD0CA0A6D37DA78542F4EC7 /* Pods-CodableProperty_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5594A116FE01F94F475D559BFF527192 /* NonOptionalEncodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01CE4BEF730329254FA7033EA1072B2 /* NonOptionalEncodableTransformer.swift */; };
+		574234C6680CED393C749CE89746D7AF /* CodableProperty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BD985AD0C1562BC27F444D66A42AFB /* CodableProperty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		584BE0EB811AEACFCAF8F11B59E63909 /* CodableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE649B8106CEF9D72B1BC91F3283592 /* CodableProperty.swift */; };
 		59D587B54EAAB3F9DC2E1179EBA9D244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6A60935751799DB672A9CAFF565A81D8 /* CodableProperty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37EC03B38EB6F5AF226291E0673D1FB /* CodableProperty-dummy.m */; };
-		7260AEF0E1CBC6B10C5BD796F257C3A1 /* CodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE886DE106B693EAAE46056985F987C5 /* CodableTransformer.swift */; };
+		783227FBFFF157CFAD35A9F7C8BBB8FD /* CodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520D463D804E290D883EFAC80D3BC7D /* CodableTransformer.swift */; };
 		7C5DC0C992D0FE6C2C8DCDA0B065F09E /* Pods-CodableProperty_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C7CBC3112DE21D495D3A03BD1F7127 /* Pods-CodableProperty_Tests-dummy.m */; };
-		80727AB71565DD88F05706262BE420E3 /* CodableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537E9A30551A0815B01D002CB5D523D /* CodableProperty.swift */; };
-		83FE0E155379A0F4A922476991D09773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C656DC23AE56F21B869D70AF45ACA956 /* CodableProperty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 233473F5F18A239BC85713D6CBC114E3 /* CodableProperty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C3931D7F0EFD52821A313865F454FDE /* OptionalEncodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8860162F799B09B82C77CC855FAF8295 /* OptionalEncodableTransformer.swift */; };
+		8CC81C44BEEC0B6FCA7D98E2966B437B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9CF08B9C8C1A85775C4D8237FAF241FD /* NonOptionalDecodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0CA612EBA5B240C777B429036E196D /* NonOptionalDecodableTransformer.swift */; };
+		BC4CDC0D206936EE1183EA0A94C35A52 /* OptionalDecodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55E6BCAB2310E3C6157EB2BAE22D1D7 /* OptionalDecodableTransformer.swift */; };
+		D835EBD93DA1FEDC3F440802C31A4D63 /* OptionalCodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8119AB997BF1368CCC11BBC3C822D4A3 /* OptionalCodableTransformer.swift */; };
+		F4637BB45DF1722FDB89735F214E9419 /* BaseCodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44784B914C626EAA3EF89A4869D30589 /* BaseCodableTransformer.swift */; };
+		F7D28AE1DFA3A41EF22A3D672543DE34 /* NonOptionalCodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D45168B104998EA63BB4827F0546D /* NonOptionalCodableTransformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,36 +37,43 @@
 /* Begin PBXFileReference section */
 		034F4A0ED8FD4E71BD934C44FDF7627F /* Pods-CodableProperty_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableProperty_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		071AA4D3475F1597BBF407AC123F598D /* Pods-CodableProperty_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableProperty_Tests-Info.plist"; sourceTree = "<group>"; };
+		0E4224815053408108DD0D59A1B1FD1D /* CodableProperty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableProperty.modulemap; sourceTree = "<group>"; };
 		1E4D5F9AB75982F7E7BFACA84E44FA9D /* Pods-CodableProperty_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableProperty_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		233473F5F18A239BC85713D6CBC114E3 /* CodableProperty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableProperty-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3918CD084B41B4B8473F296FC8DED5E4 /* CodableProperty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableProperty.modulemap; sourceTree = "<group>"; };
+		3AEFB0F9764043F5EE693ACB5D4370D8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		426543C3DBD0CA0A6D37DA78542F4EC7 /* Pods-CodableProperty_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableProperty_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4ABFE21B2B9616AE4C1671078AB4B581 /* CodableProperty-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableProperty-Info.plist"; sourceTree = "<group>"; };
-		4B305DF24F17C789A20B6195F8E67621 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		5537E9A30551A0815B01D002CB5D523D /* CodableProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableProperty.swift; path = CodableProperty/Classes/CodableProperty.swift; sourceTree = "<group>"; };
+		44784B914C626EAA3EF89A4869D30589 /* BaseCodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseCodableTransformer.swift; path = CodableProperty/Classes/BaseCodableTransformer.swift; sourceTree = "<group>"; };
+		59A5277E386510931448A12F0A84A58F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6520D463D804E290D883EFAC80D3BC7D /* CodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableTransformer.swift; path = CodableProperty/Classes/CodableTransformer.swift; sourceTree = "<group>"; };
+		6665A56436807396FDC4215ABC675E03 /* CodableProperty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableProperty-dummy.m"; sourceTree = "<group>"; };
 		7052C13548BC4256ACF466C84B2C5D57 /* Pods_CodableProperty_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CodableProperty_Tests.framework; path = "Pods-CodableProperty_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		735E7CF1C7EEBFF4F9A87ED0623F584D /* Pods-CodableProperty_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodableProperty_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		785C17572C850CBD23DFC35EB230346F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableProperty.xcconfig; sourceTree = "<group>"; };
+		80135E0D894D16A063808C21F4B40904 /* CodableProperty.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableProperty.xcconfig; sourceTree = "<group>"; };
+		8119AB997BF1368CCC11BBC3C822D4A3 /* OptionalCodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalCodableTransformer.swift; path = CodableProperty/Classes/OptionalCodableTransformer.swift; sourceTree = "<group>"; };
+		8860162F799B09B82C77CC855FAF8295 /* OptionalEncodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalEncodableTransformer.swift; path = CodableProperty/Classes/OptionalEncodableTransformer.swift; sourceTree = "<group>"; };
 		92C7CBC3112DE21D495D3A03BD1F7127 /* Pods-CodableProperty_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableProperty_Tests-dummy.m"; sourceTree = "<group>"; };
+		975D45168B104998EA63BB4827F0546D /* NonOptionalCodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonOptionalCodableTransformer.swift; path = CodableProperty/Classes/NonOptionalCodableTransformer.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A642F9B8FAFD308F288F1B53F9F557F8 /* CodableProperty.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CodableProperty.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7E32C38BC3AA34422AC2823A4F91D6F /* CodableProperty-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableProperty-Info.plist"; sourceTree = "<group>"; };
+		AD0CA612EBA5B240C777B429036E196D /* NonOptionalDecodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonOptionalDecodableTransformer.swift; path = CodableProperty/Classes/NonOptionalDecodableTransformer.swift; sourceTree = "<group>"; };
 		AE4A2035089EC25A84B118C8CE6A3BD7 /* Pods-CodableProperty_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableProperty_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B37EC03B38EB6F5AF226291E0673D1FB /* CodableProperty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableProperty-dummy.m"; sourceTree = "<group>"; };
 		BCD36C5E0FCAF96443BA69A978C07585 /* CodableProperty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableProperty.framework; path = CodableProperty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE886DE106B693EAAE46056985F987C5 /* CodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableTransformer.swift; path = CodableProperty/Classes/CodableTransformer.swift; sourceTree = "<group>"; };
 		C6AD6B548978F4E81B15B74AC2666AEA /* Pods-CodableProperty_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableProperty_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0BD985AD0C1562BC27F444D66A42AFB /* CodableProperty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableProperty-umbrella.h"; sourceTree = "<group>"; };
+		D764703E24649F0A1DD000BD0ECB7BED /* CodableProperty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableProperty-prefix.pch"; sourceTree = "<group>"; };
 		EB59B7FC9392F47FCBEEA0F91279065F /* Pods-CodableProperty_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableProperty_Tests.modulemap"; sourceTree = "<group>"; };
-		F0E07447BFF3698C1E971C3515B649C7 /* CodableProperty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableProperty-prefix.pch"; sourceTree = "<group>"; };
+		F01CE4BEF730329254FA7033EA1072B2 /* NonOptionalEncodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonOptionalEncodableTransformer.swift; path = CodableProperty/Classes/NonOptionalEncodableTransformer.swift; sourceTree = "<group>"; };
+		F55E6BCAB2310E3C6157EB2BAE22D1D7 /* OptionalDecodableTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalDecodableTransformer.swift; path = CodableProperty/Classes/OptionalDecodableTransformer.swift; sourceTree = "<group>"; };
+		F59552CF2B38E6F59BFDF492D8EAF7AE /* CodableProperty.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CodableProperty.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FBE649B8106CEF9D72B1BC91F3283592 /* CodableProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableProperty.swift; path = CodableProperty/Classes/CodableProperty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		846E960B8039031F7916A4CB74AA604A /* Frameworks */ = {
+		957750FB4A4CF67E820EBAB94DF3405E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83FE0E155379A0F4A922476991D09773 /* Foundation.framework in Frameworks */,
+				8CC81C44BEEC0B6FCA7D98E2966B437B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,16 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FB30460C3561480776E7DB17188AADD /* CodableProperty */ = {
+		17C464B30B112F5B575D772B1DEE8D26 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5537E9A30551A0815B01D002CB5D523D /* CodableProperty.swift */,
-				BE886DE106B693EAAE46056985F987C5 /* CodableTransformer.swift */,
-				51B354411EB6DE7291BDF03039B33C43 /* Pod */,
-				40D3E0E7117D46F73DF2901947DD1220 /* Support Files */,
+				0E4224815053408108DD0D59A1B1FD1D /* CodableProperty.modulemap */,
+				80135E0D894D16A063808C21F4B40904 /* CodableProperty.xcconfig */,
+				6665A56436807396FDC4215ABC675E03 /* CodableProperty-dummy.m */,
+				A7E32C38BC3AA34422AC2823A4F91D6F /* CodableProperty-Info.plist */,
+				D764703E24649F0A1DD000BD0ECB7BED /* CodableProperty-prefix.pch */,
+				D0BD985AD0C1562BC27F444D66A42AFB /* CodableProperty-umbrella.h */,
 			);
-			name = CodableProperty;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CodableProperty";
 			sourceTree = "<group>";
 		};
 		2BB0A9F1F144E8577F91CE2CAA54F929 /* Targets Support Files */ = {
@@ -94,34 +110,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		40D3E0E7117D46F73DF2901947DD1220 /* Support Files */ = {
+		616814B45A98D2F7397C85E4B2EDE02B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3918CD084B41B4B8473F296FC8DED5E4 /* CodableProperty.modulemap */,
-				8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */,
-				B37EC03B38EB6F5AF226291E0673D1FB /* CodableProperty-dummy.m */,
-				4ABFE21B2B9616AE4C1671078AB4B581 /* CodableProperty-Info.plist */,
-				F0E07447BFF3698C1E971C3515B649C7 /* CodableProperty-prefix.pch */,
-				233473F5F18A239BC85713D6CBC114E3 /* CodableProperty-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CodableProperty";
-			sourceTree = "<group>";
-		};
-		50CF419BDF4F2116344A75B2A24E4308 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1FB30460C3561480776E7DB17188AADD /* CodableProperty */,
+				D0FE429DE7965B82C872B417D90242FA /* CodableProperty */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		51B354411EB6DE7291BDF03039B33C43 /* Pod */ = {
+		852004C8E1F2A23A7B60E1E5C23E2DD2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A642F9B8FAFD308F288F1B53F9F557F8 /* CodableProperty.podspec */,
-				4B305DF24F17C789A20B6195F8E67621 /* LICENSE */,
-				785C17572C850CBD23DFC35EB230346F /* README.md */,
+				F59552CF2B38E6F59BFDF492D8EAF7AE /* CodableProperty.podspec */,
+				59A5277E386510931448A12F0A84A58F /* LICENSE */,
+				3AEFB0F9764043F5EE693ACB5D4370D8 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -164,11 +166,30 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				50CF419BDF4F2116344A75B2A24E4308 /* Development Pods */,
+				616814B45A98D2F7397C85E4B2EDE02B /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				A77485579E7C663EF85960681B5E02B0 /* Products */,
 				2BB0A9F1F144E8577F91CE2CAA54F929 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D0FE429DE7965B82C872B417D90242FA /* CodableProperty */ = {
+			isa = PBXGroup;
+			children = (
+				44784B914C626EAA3EF89A4869D30589 /* BaseCodableTransformer.swift */,
+				FBE649B8106CEF9D72B1BC91F3283592 /* CodableProperty.swift */,
+				6520D463D804E290D883EFAC80D3BC7D /* CodableTransformer.swift */,
+				975D45168B104998EA63BB4827F0546D /* NonOptionalCodableTransformer.swift */,
+				AD0CA612EBA5B240C777B429036E196D /* NonOptionalDecodableTransformer.swift */,
+				F01CE4BEF730329254FA7033EA1072B2 /* NonOptionalEncodableTransformer.swift */,
+				8119AB997BF1368CCC11BBC3C822D4A3 /* OptionalCodableTransformer.swift */,
+				F55E6BCAB2310E3C6157EB2BAE22D1D7 /* OptionalDecodableTransformer.swift */,
+				8860162F799B09B82C77CC855FAF8295 /* OptionalEncodableTransformer.swift */,
+				852004C8E1F2A23A7B60E1E5C23E2DD2 /* Pod */,
+				17C464B30B112F5B575D772B1DEE8D26 /* Support Files */,
+			);
+			name = CodableProperty;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -182,11 +203,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		943900C43F5C1CFC313FF3F5A67B88EE /* Headers */ = {
+		0FF3265147AEEF3A7C220A3DEF0A304C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C656DC23AE56F21B869D70AF45ACA956 /* CodableProperty-umbrella.h in Headers */,
+				574234C6680CED393C749CE89746D7AF /* CodableProperty-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,12 +224,12 @@
 /* Begin PBXNativeTarget section */
 		7A8C1AA976901F6254DE0BB8D3504A9F /* CodableProperty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BE366DD7457C195C09BB64F553B43BA /* Build configuration list for PBXNativeTarget "CodableProperty" */;
+			buildConfigurationList = 19ED0EA590B3792576C6FF67F17A0B46 /* Build configuration list for PBXNativeTarget "CodableProperty" */;
 			buildPhases = (
-				943900C43F5C1CFC313FF3F5A67B88EE /* Headers */,
-				2E778DEB42C68BCF5CEA27CD22CD3FC2 /* Sources */,
-				846E960B8039031F7916A4CB74AA604A /* Frameworks */,
-				D9B2E5EE53597A58FB7D1A291BCF45B3 /* Resources */,
+				0FF3265147AEEF3A7C220A3DEF0A304C /* Headers */,
+				0461CA620CB9A9630B4C62C25E072C61 /* Sources */,
+				957750FB4A4CF67E820EBAB94DF3405E /* Frameworks */,
+				D7DE41DE74C70C3F8F17BE4A1214483B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +274,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = A77485579E7C663EF85960681B5E02B0 /* Products */;
@@ -273,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9B2E5EE53597A58FB7D1A291BCF45B3 /* Resources */ = {
+		D7DE41DE74C70C3F8F17BE4A1214483B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,13 +305,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E778DEB42C68BCF5CEA27CD22CD3FC2 /* Sources */ = {
+		0461CA620CB9A9630B4C62C25E072C61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A60935751799DB672A9CAFF565A81D8 /* CodableProperty-dummy.m in Sources */,
-				80727AB71565DD88F05706262BE420E3 /* CodableProperty.swift in Sources */,
-				7260AEF0E1CBC6B10C5BD796F257C3A1 /* CodableTransformer.swift in Sources */,
+				F4637BB45DF1722FDB89735F214E9419 /* BaseCodableTransformer.swift in Sources */,
+				2451F25351BF63395C7947142C718774 /* CodableProperty-dummy.m in Sources */,
+				584BE0EB811AEACFCAF8F11B59E63909 /* CodableProperty.swift in Sources */,
+				783227FBFFF157CFAD35A9F7C8BBB8FD /* CodableTransformer.swift in Sources */,
+				F7D28AE1DFA3A41EF22A3D672543DE34 /* NonOptionalCodableTransformer.swift in Sources */,
+				9CF08B9C8C1A85775C4D8237FAF241FD /* NonOptionalDecodableTransformer.swift in Sources */,
+				5594A116FE01F94F475D559BFF527192 /* NonOptionalEncodableTransformer.swift in Sources */,
+				D835EBD93DA1FEDC3F440802C31A4D63 /* OptionalCodableTransformer.swift in Sources */,
+				BC4CDC0D206936EE1183EA0A94C35A52 /* OptionalDecodableTransformer.swift in Sources */,
+				8C3931D7F0EFD52821A313865F454FDE /* OptionalEncodableTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +342,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3B109E2657FD5C0405694EF415A543F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80135E0D894D16A063808C21F4B40904 /* CodableProperty.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
+				PRODUCT_MODULE_NAME = CodableProperty;
+				PRODUCT_NAME = CodableProperty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,6 +433,37 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		5D7C8D6B156BACC87965AD59B49ABF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80135E0D894D16A063808C21F4B40904 /* CodableProperty.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
+				PRODUCT_MODULE_NAME = CodableProperty;
+				PRODUCT_NAME = CodableProperty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		63EE308C6CF1566E500BB8387DA808B1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -471,38 +563,6 @@
 			};
 			name = Debug;
 		};
-		91FB37E2E595D003711D88E40A988763 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
-				PRODUCT_MODULE_NAME = CodableProperty;
-				PRODUCT_NAME = CodableProperty;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		B1D9DE95F62EF8EBC1B5D9965A107330 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE4A2035089EC25A84B118C8CE6A3BD7 /* Pods-CodableProperty_Tests.debug.xcconfig */;
@@ -536,54 +596,23 @@
 			};
 			name = Debug;
 		};
-		FC070AB1632499A397CCAB9EA5537D08 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8028D4FDF42F62963E33C8DDC9F9B4EE /* CodableProperty.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CodableProperty/CodableProperty-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CodableProperty/CodableProperty-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CodableProperty/CodableProperty.modulemap";
-				PRODUCT_MODULE_NAME = CodableProperty;
-				PRODUCT_NAME = CodableProperty;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		19ED0EA590B3792576C6FF67F17A0B46 /* Build configuration list for PBXNativeTarget "CodableProperty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7C8D6B156BACC87965AD59B49ABF17 /* Debug */,
+				3B109E2657FD5C0405694EF415A543F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
 				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9BE366DD7457C195C09BB64F553B43BA /* Build configuration list for PBXNativeTarget "CodableProperty" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FC070AB1632499A397CCAB9EA5537D08 /* Debug */,
-				91FB37E2E595D003711D88E40A988763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
