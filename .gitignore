@@ -38,3 +38,4 @@ Carthage/Build
 
 # Swift Package Manager
 .build/
+.swiftpm/xcode
