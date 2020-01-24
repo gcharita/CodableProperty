@@ -47,13 +47,14 @@ class Tests: XCTestCase {
             XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "EUR" })?.rate, 4.24)
             XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "SEK" })?.rate, 0.41)
             
-            data = try jsonEncoder.encode(object)
+            data = try jsonEncoder.encode(optionalObject)
             optionalObject = try jsonDecoder.decode(OptionalRatesCurrencyConversion.self, from: data)
             XCTAssertEqual(optionalObject.currency, "PLN")
             XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "USD" })?.rate, 3.76)
             XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "EUR" })?.rate, 4.24)
             XCTAssertEqual(optionalObject.rates?.first(where: { $0.currency == "SEK" })?.rate, 0.41)
         } catch {
+            print(error)
             XCTAssertTrue(false)
         }
     }
@@ -90,10 +91,10 @@ struct RatesTransformer: BaseCodableTransformer {
     typealias Value = [ExchangeRate]
 
     func value(from decoder: Decoder) throws -> Value? {
-        let container = try decoder.singleValueContainer()
-        let dictionary = try container.decode([String: Double].self)
+        let container = try? decoder.singleValueContainer()
+        let dictionary = try? container?.decode([String: Double].self)
 
-        return dictionary.map { key, value in
+        return dictionary?.map { key, value in
             ExchangeRate(currency: key, rate: value)
         }
     }
