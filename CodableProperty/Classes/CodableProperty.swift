@@ -13,7 +13,16 @@ import Foundation
     private let transformer = Transformer()
     
     public init(from decoder: Decoder) throws {
-        wrappedValue = try transformer.value(from: decoder)
+        guard let value = try transformer.value(from: decoder) else {
+            throw DecodingError.valueNotFound(
+                Transformer.Value.self,
+                DecodingError.Context(
+                    codingPath: decoder.codingPath,
+                    debugDescription: "Expected \(Transformer.Value.self) value but found null instead."
+                )
+            )
+        }
+        wrappedValue = value
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -41,6 +50,15 @@ import Foundation
     private let transformer = Transformer()
     
     public init(from decoder: Decoder) throws {
-        wrappedValue = try transformer.value(from: decoder)
+        guard let value = try transformer.value(from: decoder) else {
+            throw DecodingError.valueNotFound(
+                Transformer.Value.self,
+                DecodingError.Context(
+                    codingPath: decoder.codingPath,
+                    debugDescription: "Expected \(Transformer.Value.self) value but found null instead."
+                )
+            )
+        }
+        wrappedValue = value
     }
 }

@@ -71,23 +71,23 @@ class Tests: XCTestCase {
 struct CurrencyConversion: Codable {
     var currency: String
     
-    @CodableProperty<NonOptionalCodableTransformer<RatesTransformer>>
+    @CodableProperty<RatesTransformer>
     var rates: [ExchangeRate]
 }
 
 struct OptionalRatesCurrencyConversion: Codable {
     var currency: String
     
-    @CodableProperty<OptionalCodableTransformer<RatesTransformer>>
+    @OptionalCodableProperty<RatesTransformer>
     var rates: [ExchangeRate]?
 }
 
-struct ExchangeRate {
+struct ExchangeRate: Codable {
     let currency: String
     let rate: Double
 }
 
-struct RatesTransformer: BaseCodableTransformer {
+struct RatesTransformer: CodableTransformer {
     typealias Value = [ExchangeRate]
 
     func value(from decoder: Decoder) throws -> Value? {

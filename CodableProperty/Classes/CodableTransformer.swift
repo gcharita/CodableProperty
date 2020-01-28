@@ -28,7 +28,7 @@ public protocol DecodableTransformer {
      
      - Returns: A new instance of `Value` type.
      */
-    func value(from decoder: Decoder) throws -> Value
+    func value(from decoder: Decoder) throws -> Value?
 }
 
 /// A type that transforms the outcome of the encoding process.
@@ -52,5 +52,5 @@ public protocol EncodableTransformer {
      
      - Throws: an error if any values are invalid for the given encoder's format.
      */
-    func encode(value: Value, to encoder: Encoder) throws
+    func encode(value: Value?, to encoder: Encoder) throws
 }
